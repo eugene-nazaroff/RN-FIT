@@ -1,8 +1,8 @@
 {
-  "name": "RN-FIT",
+  "name": "reactnativeapp",
   "version": "0.0.1",
-  "description": "React Native Template for FIT",
-  "repository": "https://github.com/eugene-nazaroff/RN-FIT.git",
-  "author": "Eugene Nazarov <evgeni.nazarof@fabit.ru>",
+  "description": "React Native Template",
+  "repository": "https://git.fabit.ru/std/reactnativeapp",
+  "author": "Evgeniy Nazarov <Evgeni.Nazarov@fabit.ru",
   "license": "none"
 }

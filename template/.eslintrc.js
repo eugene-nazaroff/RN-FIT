@@ -3,6 +3,7 @@ module.exports = {
   extends: '@react-native-community',
   parser: '@typescript-eslint/parser',
   rules: {
+    'no-console': 'error',
     'max-lines': ['error', {max: 150}],
   },
   plugins: ['@typescript-eslint', 'simple-import-sort', 'unused-imports'],

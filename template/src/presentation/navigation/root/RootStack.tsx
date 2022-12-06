@@ -9,7 +9,9 @@ const RootStack = () => {
     <Stack.Navigator screenOptions={{headerShown: true}}>
       {/*TODO: Удалить экран 'demo', добавить свои экраны*/}
       <Stack.Screen
-        options={{title: 'Добро пожаловать в шаблон RN-FIT'}}
+        options={{
+          title: 'Завершение инициализации',
+        }}
         name="demo"
         component={DemoView}
       />

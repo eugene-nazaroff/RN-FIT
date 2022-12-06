@@ -8,12 +8,18 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
+    "prepare": "husky install",
+    "postinstall": "husky install && npx husky add .husky/pre-commit \"lint\""
   },
+
   "dependencies": {
     "@react-navigation/native": "^6.0.16",
     "@react-navigation/native-stack": "^6.9.4",
     "apisauce": "^2.1.6",
+    "husky": "^8.0.2",
+    "mobx": "^6.7.0",
+    "mobx-react-lite": "^3.4.0",
     "native-base": "^3.4.23",
     "react": "18.1.0",
     "react-native": "0.70.6",
@@ -32,6 +38,7 @@
     "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
+    "postinstall-postinstall": "^2.1.0",
     "babel-jest": "^26.6.3",
     "eslint": "^7.32.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
