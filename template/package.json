@@ -10,7 +10,6 @@
     "test": "jest",
     "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
-    "postinstall": "husky install && npx husky add .husky/pre-commit \"lint\""
   },
 
   "dependencies": {
