@@ -1,8 +1,3 @@
 #!/usr/bin/env node
 
-import {series} from 'async';
-const {exec} = require('child_process');
-
-series([
-    () => exec('git init'),
-]);
+console.log("This is post init script");
