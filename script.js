@@ -1,3 +1,8 @@
 #!/usr/bin/env node
 
-console.log("This is post init script");
+import {series} from 'async';
+const {exec} = require('child_process');
+
+series([
+    () => exec('git init'),
+]);
