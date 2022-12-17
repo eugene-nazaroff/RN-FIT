@@ -3,8 +3,8 @@ import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
 export type RootStackParamsList = {
     demo: undefined; //TODO: delete me
-    tabs: undefined; //TODO: delete me
+    feed: undefined; //TODO: delete me
 };
 
 //use it for annotating useNavigation hook
-export type RootNavigationProp = NativeStackNavigationProp<RootStackParamsList>;
+export type RootStackNavigationProp = NativeStackNavigationProp<RootStackParamsList>;
