@@ -1,5 +1,5 @@
-import {FeedPostDTO} from 'src/domain/entities/Feed/FeedPost';
+import {IFeedPost} from 'src/domain/entities/Feed/IFeedPost';
 
 export interface FeedRepository {
-    getPosts(): Promise<FeedPostDTO[] | undefined>;
+    getPosts(): Promise<IFeedPost[] | undefined>;
 }
