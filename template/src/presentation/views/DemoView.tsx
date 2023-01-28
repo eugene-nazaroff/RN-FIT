@@ -19,10 +19,10 @@ const DemoView = observer(() => {
                 <Text color="blue.500">TODO</Text>, а именно:
             </Heading>
             <VStack mt="12px" space="5px">
-                {steps.map((step, index) => (
-                    <HStack key={`step# ${index}`} space="12px" alignItems="center">
-                        <Text fontSize={25}>{index}</Text>
-                        <Text>{step}</Text>
+                {steps.map(step => (
+                    <HStack key={step.index} space="12px" alignItems="center">
+                        <Text fontSize={25}>{step.index}</Text>
+                        <Text>{step.text}</Text>
                     </HStack>
                 ))}
             </VStack>
