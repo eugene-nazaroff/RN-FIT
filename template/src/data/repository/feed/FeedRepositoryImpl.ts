@@ -5,7 +5,7 @@ import APIService from 'src/service/APISerivce';
 
 class FeedRepositoryImpl implements FeedRepository {
     async getPosts(): Promise<FeedPostDTO[] | undefined> {
-        const res: ApiResponse<FeedPostDTO[]> = await APIService.get('/posts?_limit=5');
+        const res: ApiResponse<FeedPostDTO[]> = await APIService.get('/posts?_limit=200');
         return res.data;
     }
 }

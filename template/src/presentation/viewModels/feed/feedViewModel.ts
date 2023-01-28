@@ -13,6 +13,7 @@ class FeedViewModel {
 
     getPosts = async () => {
         const posts = await this.getPostsUseCase.execute();
+
         runInAction(() => {
             this.posts = posts
                 ? posts?.map(dto => makeAutoObservable(new FeedPost(dto)))

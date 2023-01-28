@@ -1,12 +1,13 @@
+import {FlashList} from '@shopify/flash-list';
 import {observer} from 'mobx-react-lite';
 import {Button, Divider, HStack, Text, View, VStack} from 'native-base';
 import React, {FC} from 'react';
-import {FlatList} from 'react-native';
 import FeedPost from 'src/domain/entities/Feed/FeedPost';
 
 const Feed: FC<{data: FeedPost[]}> = ({data}) => {
     return (
-        <FlatList
+        <FlashList
+            estimatedItemSize={200}
             ItemSeparatorComponent={() => <Divider />}
             showsVerticalScrollIndicator={false}
             data={data}

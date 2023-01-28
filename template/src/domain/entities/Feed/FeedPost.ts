@@ -8,9 +8,15 @@ export default class FeedPost {
     private readonly _id: string;
     private readonly _title: string;
     private readonly _body: string;
-    private _rating: number = 0;
     private readonly maxRating: number = 10;
     private readonly minRating: number = -10;
+    private _rating: number = 0;
+
+    constructor(feedPostDTO: FeedPostDTO) {
+        this._id = feedPostDTO.id;
+        this._body = feedPostDTO.body;
+        this._title = feedPostDTO.title;
+    }
 
     get id(): string {
         return this._id;
@@ -40,12 +46,6 @@ export default class FeedPost {
             return this.minRating;
         }
         return this._rating;
-    }
-
-    constructor(feedPostDTO: FeedPostDTO) {
-        this._id = feedPostDTO.id;
-        this._body = feedPostDTO.body;
-        this._title = feedPostDTO.title;
     }
 
     increaseRating = () => {
