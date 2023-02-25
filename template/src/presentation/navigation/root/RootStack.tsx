@@ -17,7 +17,14 @@ const RootStack = () => {
                 name="demo"
                 component={DemoView}
             />
-            <Stack.Screen options={{title: 'Новости'}} name="feed" component={FeedView} />
+            <Stack.Screen
+                options={{
+                    headerTitle: 'Новости',
+                    headerShadowVisible: false,
+                }}
+                name="feed"
+                component={FeedView}
+            />
         </Stack.Navigator>
     );
 };

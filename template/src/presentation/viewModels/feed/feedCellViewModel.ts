@@ -18,6 +18,10 @@ export default class FeedCellViewModel {
     private _title: string;
     private _rating: number;
 
+    get tags() {
+        return ['Авто', 'Мото', 'Транспорт', 'Авторское'];
+    }
+
     get id(): string {
         return this._id;
     }
