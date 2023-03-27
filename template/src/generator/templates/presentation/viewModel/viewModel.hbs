@@ -1,0 +1,9 @@
+import {makeAutoObservable} from 'mobx';
+import {createContext} from 'react';
+
+class {{camelCase name}}ViewModel {
+    constructor() {
+        makeAutoObservable(this);
+    }
+}
+export default createContext(new {{camelCase name}}ViewModel());

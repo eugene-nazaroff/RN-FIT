@@ -4,11 +4,11 @@ import React from 'react';
 import {useColorScheme} from 'react-native';
 import ErrorBoundary from 'react-native-error-boundary';
 import {gestureHandlerRootHOC} from 'react-native-gesture-handler';
-import RootStack from 'src/presentation/navigation/root/RootStack';
-import {darkTheme} from 'src/presentation/navigation/theme/darkTheme';
-import {defaultTheme} from 'src/presentation/navigation/theme/defaultTheme';
-import theme from 'src/presentation/theme/theme';
-
+import RootStack from 'src/navigation/root/RootStack';
+import {darkTheme} from 'src/navigation/theme/darkTheme';
+import {defaultTheme} from 'src/navigation/theme/defaultTheme';
+import theme from 'src/theme/theme';
+export {default} from './.storybook';
 const App = () => {
     const scheme = useColorScheme();
 

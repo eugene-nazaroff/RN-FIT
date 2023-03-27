@@ -1,0 +1,16 @@
+import {observer} from 'mobx-react-lite';
+import {Flex, Text} from 'native-base';
+import React, {useContext} from 'react';
+import {{camelCase name}}ViewModel from 'src/presentation/viewModels/{{feature}}/{{camelCase name}}ViewModel';
+
+const {{name}} = () => {
+    const viewModel = useContext({{camelCase name}}ViewModel)
+
+    return (
+        <Flex safeAreaTop justifyContent='center'>
+            <Text>{{name}}View</Text>
+        </Flex>
+    );
+};
+
+export default observer({{name}});
