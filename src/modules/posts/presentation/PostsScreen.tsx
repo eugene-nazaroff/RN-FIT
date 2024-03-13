@@ -17,12 +17,12 @@ export const PostsScreen = observer(() => {
 
     return <View style={{ flex: 1, padding: 16 }}>
         {viewModel.isLoading ? <ActivityIndicator size='large' /> :
-            <FlatList refreshing={viewModel.isRefreshing} onRefresh={() => viewModel.refresh()} showsVerticalScrollIndicator={false} data={viewModel.posts} renderItem={({ item, index }) => {
+            <FlatList refreshing={viewModel.isRefreshing} onRefresh={() => viewModel.refresh()} showsVerticalScrollIndicator={false} data={viewModel.posts} renderItem={({ item }) => {
                 return <TouchableOpacity onPress={() => {
-                    navigation.navigate("post", { id: "1" })
+                    navigation.navigate("post", { id: item.id })
                 }} style={{ borderWidth: 1, borderRadius: 4, marginBottom: 6, padding: 4 }} key={item.title}>
                     <Text style={{ fontWeight: "600", textTransform: "uppercase", marginBottom: 2, }}>{item.title}</Text>
-                    <Text style={{ fontSize: 12 }}>{item.description}</Text>
+                    <Text style={{ fontSize: 12 }}>{item.body}</Text>
                 </TouchableOpacity>
             }} />}
     </View >
