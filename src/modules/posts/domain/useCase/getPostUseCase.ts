@@ -3,9 +3,9 @@ import type { IPostsRepository } from '../IPostsRepository';
 
 @injectable()
 export class GetPostUseCase {
-    constructor(@inject('IPostsRepository') private repo: IPostsRepository) { }
+    constructor(@inject('IPostsRepository') private repository: IPostsRepository) { }
 
     async execute(id: string) {
-        return this.repo.getPost(id);
+        return this.repository.getPost(id);
     }
 }

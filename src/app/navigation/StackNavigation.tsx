@@ -18,7 +18,7 @@ export type PostRouteProp = RouteProp<PostsScreensParamList, "post">
 
 export const AppStack = () => {
   return <Stack.Navigator>
-    <Stack.Screen name="posts" options={{ title: "Posts", }} component={PostsScreen} />
+    <Stack.Screen name="posts" options={{ title: "Новости", }} component={PostsScreen} />
     <Stack.Screen name="post" options={{ presentation: "modal", title: "" }} component={PostScreen} />
   </Stack.Navigator>
 }

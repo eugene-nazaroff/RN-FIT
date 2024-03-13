@@ -16,3 +16,8 @@ export const postsContainerModule = new ContainerModule((bind: interfaces.Bind) 
 })
 
 
+
+
+
+
+

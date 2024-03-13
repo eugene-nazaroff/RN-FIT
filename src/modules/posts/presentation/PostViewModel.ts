@@ -5,7 +5,7 @@ import { inject, injectable } from "inversify";
 
 @injectable()
 export class PostViewModel {
-    constructor(@inject('GetPostUseCase') private useCase: GetPostUseCase) {
+    constructor(@inject('GetPostUseCase') private readonly useCase: GetPostUseCase) {
         makeAutoObservable(this)
     }
     post?: IPost = undefined

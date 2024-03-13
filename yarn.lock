@@ -2269,6 +2269,13 @@ anymatch@^3.0.3:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+apisauce@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/apisauce/-/apisauce-3.0.1.tgz#ecee5276f6c3528f28cd635834fc6b8be0519c61"
+  integrity sha512-4HEmETv0skPW+bFS4TzB5nQ5y2TdafbUpnAjp83MW8Re9lHwngao2hpnk7aIaxExJqSTxkpWl+ThgZbqjx2bpQ==
+  dependencies:
+    axios "^1.4.0"
+
 appdirsjs@^1.2.4:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/appdirsjs/-/appdirsjs-1.2.7.tgz#50b4b7948a26ba6090d4aede2ae2dc2b051be3b3"
@@ -2417,7 +2424,7 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-axios@^1.6.7:
+axios@^1.4.0, axios@^1.6.7:
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.7.tgz#7b48c2e27c96f9c68a2f8f31e2ab19f59b06b0a7"
   integrity sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==

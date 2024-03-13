@@ -1,6 +1,11 @@
 export interface IPost {
-    userId: string;
-    id: string;
-    title: string;
-    body: string;
+
+
+    "source": {
+        "id"?: string,
+        "name": string
+    },
+    "author": string,
+    "title": string,
+    "description": string
 }
